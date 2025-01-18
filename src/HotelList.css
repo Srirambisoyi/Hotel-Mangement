@@ -1,0 +1,12 @@
+/* src/HotelList.css */
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
