@@ -1,0 +1,73 @@
+/* HotelList.css */
+
+.hotel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hotel-table th, .hotel-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  /* Header Styling */
+  .hotel-table th {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Row Styling */
+  .hotel-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+  }
+  
+  .hotel-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+  }
+  
+  /* Hover effect */
+  .hotel-table tr:hover {
+    background-color: #ddd; /* Grey on hover */
+    cursor: pointer;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .hotel-table {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+    }
+  
+    .hotel-table th, .hotel-table td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .hotel-table th {
+      text-align: center;
+    }
+  
+    .hotel-table td {
+      text-align: left;
+      padding-left: 10px;
+      border: none;
+      position: relative;
+    }
+  
+    .hotel-table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding-left: 10px;
+      padding-top: 5px;
+    }
+  }
+  
